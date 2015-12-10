@@ -4,11 +4,14 @@
         <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
     </head>
     <body>
-        <div>
-            <label>Name:</label>
-            <input type="text" ng-model="yourName" placeholder="Enter a name here">
+        <div style="">
+            <label>Primeiro Nome:</label>
+            <input type="text" ng-model="nome_1" placeholder="Enter a name here">
+            <label>Segundo Nome:</label>
+            <input type="text" ng-model="nome_2" placeholder="Enter a name here">
             <hr>
-            <h1>Hello {{yourName}}!</h1>
+            <md-button class="btn1" ng-click="acceptOffer();"> Accept </md-button>
+            <h1>Hello {{nome_1}} {{nome_2}}!</h1>
         </div>
     </body>
 </html>
